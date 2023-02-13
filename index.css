@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(199, 189, 189);
+}
+.nav {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  font-size: 20px;
+  padding: 15px;
+}
+ul,
+a,
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  text-decoration: none;
+  color: aliceblue;
+}
+.main {
+  height: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows:
+    400px 200px auto
+    auto;
+  gap: 1px;
+  background-color: black;
+}
+.covor {
+  background-image: url(Screen\ Shot\ 2023-02-12\ at\ 7.34.49\ AM.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#h1 {
+  color: aliceblue;
+  justify-content: center;
+}
+.about {
+  background-image: url(1899.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  font-size: medium;
+}
+
+.cards {
+  grid-column-end: 3;
+  grid-column-start: 1;
+  margin: 10px;
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  gap: 1rem;
+  justify-content: center;
+}
+.card {
+  height: 300px;
+  border: 2px black solid;
+  position: relative;
+  overflow: hidden;
+  color: aliceblue;
+}
+
+.cards figure img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.content {
+  text-align: center;
+}
+.readmore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #396d73;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 25%);
+  gap: 1rem;
+}
+.card {
+  background-color: black;
+}
+.card img {
+  display: flex;
+  justify-content: cover;
+}
+.info {
+  height: 300px;
+  width: 300px;
+}
